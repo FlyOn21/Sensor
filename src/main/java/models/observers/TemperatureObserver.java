@@ -5,7 +5,9 @@ import Interfaces.ISubstance;
 import entitys.Substance;
 
 import java.time.LocalDateTime;
+
 import config.Config;
+
 import java.util.HashMap;
 import java.util.UUID;
 
@@ -21,6 +23,7 @@ public class TemperatureObserver implements IObserver<Double> {
         this.historyLog = new HashMap<>();
     }
 
+    @Override
     public UUID getId() {
         return this.id;
     }
